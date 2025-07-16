@@ -1,0 +1,12 @@
+:root {
+	--primary-green: #2d5a2d;
+	--primary-green-dark: #1a3f1a;
+	--primary-green-light: #4ade80;
+	--white: #ffffff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}

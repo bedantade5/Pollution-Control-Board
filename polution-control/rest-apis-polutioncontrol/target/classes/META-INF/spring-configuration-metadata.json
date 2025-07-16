@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "myconf",
+      "type": "com.vig.polutioncontrol.restapi.config.RsaKeyProperties",
+      "sourceType": "com.vig.polutioncontrol.restapi.config.RsaKeyProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "myconf.private-key",
+      "type": "java.security.interfaces.RSAPrivateKey",
+      "sourceType": "com.vig.polutioncontrol.restapi.config.RsaKeyProperties"
+    },
+    {
+      "name": "myconf.public-key",
+      "type": "java.security.interfaces.RSAPublicKey",
+      "sourceType": "com.vig.polutioncontrol.restapi.config.RsaKeyProperties"
+    }
+  ],
+  "hints": []
+}

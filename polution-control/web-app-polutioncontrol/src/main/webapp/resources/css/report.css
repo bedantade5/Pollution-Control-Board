@@ -1,0 +1,141 @@
+.report-page {
+  font-family: 'Inter', sans-serif;
+  background-color: #e9f7ec;
+  color: #333;
+  padding: 30px;
+}
+
+.header {
+	background: linear-gradient(135deg, #2d5a2d 0%, #1a3f1a 100%);
+	color: white;
+	padding: 2rem 0;
+	box-shadow: 0 4px 20px rgba(45, 90, 45, 0.15);
+	position: relative;
+	overflow: hidden;
+}
+
+.header::before {
+	content: '';
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 200%;
+	height: 200%;
+	background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%,
+		transparent 70%);
+	animation: pulse 4s ease-in-out infinite;
+}
+
+.main-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+	text-align: center;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+	position: relative;
+	z-index: 1;
+}
+
+.main-content {
+	padding: 2rem 0;
+	min-height: calc(100vh - 200px);
+}
+
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+body {
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		Roboto, sans-serif;
+	background: linear-gradient(135deg, #f0f9f0 0%, #e8f5e8 100%);
+	color: #2d3748;
+	line-height: 1.6;
+	min-height: 100vh;
+}
+
+.filter-section {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.filter-section label {
+  font-size: 14px;
+  color: #333;
+}
+
+.filter-section input[type="datetime-local"] {
+  padding: 8px 12px;
+  border: 1px solid #a8d5ba;
+  border-radius: 6px;
+  background-color: #f7fcf9;
+  font-size: 14px;
+}
+
+.filter-section button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.filter-section button:hover {
+  background-color: #43a047;
+}
+
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+
+.report-table th, .report-table td {
+  border: 1px solid #c6e0d4;
+  padding: 10px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.report-table th {
+  background-color: #c8e6c9;
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.report-table tbody tr:nth-child(even) {
+  background-color: #f1f8e9;
+}
+
+.report-table tbody tr:hover {
+  background-color: #e6f3d7;
+}
+
+meta[name="_csrf"], meta[name="_csrf_header"] {
+  display: none;
+}
+
+.footer {
+	background: #1a3f1a;
+	color: white;
+	text-align: center;
+	padding: 1.5rem 0;
+	margin-top: auto;
+}
+
+.footer p {
+	opacity: 0.8;
+	font-size: 0.9rem;
+}
+
+
